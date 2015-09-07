@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{5ca9102d-1e72-4260-b4cc-971395212a72}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cube.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Entity.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)EntityManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Game.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GPUProgram.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GPUShader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GPUShaderParameter.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Material.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Renderable.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Renderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)RenderOperation.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)VertexBufferObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)VertexData.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)VertexDataManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cube.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Entity.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)EntityManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Game.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GPUProgram.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GPUShader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GPUShaderParameter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Material.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Renderable.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Renderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)RenderOperation.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)VertexBufferObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)VertexData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)VertexDataManager.h" />
+  </ItemGroup>
+</Project>
